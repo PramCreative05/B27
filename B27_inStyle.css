@@ -1,0 +1,231 @@
+﻿
+/*==================GENERAL==============================================*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+/*==================HEADER==============================================*/
+
+header {
+    background-color: #d63031;
+    color: white;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    top: 0px;
+}
+
+.logo{
+    height:65px;
+    padding:10px 10px;
+    border-radius:15px;
+}
+
+.title-header {
+    float: left;
+    display: block;
+}
+
+.content-header {
+    float: right;
+    margin-right: 25px;
+}
+
+    .content-header a {
+        line-height: 65px;
+        float: left;
+        color: white;
+        padding: 0 25px;
+        transition: all 0.5s;
+        display: block;
+    }
+
+        .content-header a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+
+/*==================BODY==============================================*/
+
+.heading {
+    padding-top: 80px;
+    padding-bottom: 5px;
+    color: black;
+    border-bottom: 1px solid #dfe6e9;
+    margin-bottom:30px;
+}
+
+.txt-contents {
+    width: 90%;
+    display: inline-block;
+    margin-top: 10px;
+    color: black;
+}
+
+/*=================content=======================*/
+
+.content-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius:10%;
+}
+
+.courtesy{
+    font-size:10px;
+    color:darkgray;
+}
+
+.content-wrapper {
+    height: auto;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.contents {
+    display: flex;
+}
+
+.content {
+    background-color: #ffeaa7;
+    width:350px;
+    height:350px;
+    border-radius:10%;
+    padding:7px;
+    margin-right:10px;
+    margin-bottom: 10px;
+}
+
+.content-icon h3{
+    padding-bottom:10px;
+}
+/*=============button============================*/
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 2px;
+    text-align: center;
+}
+
+    .btn:hover {
+        opacity: 1;
+    }
+
+.join-wrapper {
+    border-top: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.join-title{
+    padding:20px 0px;
+}
+.join {
+    padding: 15px 40px;
+    background-color: #d63031;
+    cursor: pointer;
+    box-shadow: 0 7px #c0392b;
+}
+
+    .join:active {
+        position: relative;
+        top: 7px;
+        box-shadow: none;
+    }
+
+  
+/*==================FOOTER==============================================*/
+footer {
+    background-color: #d63031;
+    color: white;
+    padding:20px;
+    display:inline-block;
+    width:100%;
+}
+
+.footer-logo {
+
+    line-height:160px;
+    padding:0 25px;
+    float:left;
+}
+
+.footer-list {
+    padding-bottom:20px;
+    float:right;
+}
+
+    .footer-list li {
+        padding-bottom: 10px;
+    }
+
+/*==================RWD==============================================*/
+/* Untuk Tablet */
+@media (max-width: 1000px) {
+    .contents{
+        flex-wrap:wrap;
+    }
+
+
+    body{
+        font-size:0.75em;
+    }
+
+    .courtesy {
+        font-size: 7px;
+    }
+    
+}
+
+/* Untuk Smartphone */
+@media (max-width: 670px) {
+    .contents{
+        flex-direction:column;
+    }
+
+    .contents div{
+        margin:0px auto;
+    }
+
+    body {
+        font-size: 0.75em;
+    }
+
+    .courtesy {
+        font-size: 7px;
+    }
+}
+
